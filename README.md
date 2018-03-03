@@ -9,9 +9,9 @@ pip install bcrypt
 
 # Создание БД  
 FLASK_APP=server.py flask shell  
-from database import init_db
-init_db()
-exit()
+from database import init_db  
+init_db()  
+exit()  
 
 # Запуск  
 FLASK_APP=server.py FLASK_DEBUG=1 flask run --host=0.0.0.0  
