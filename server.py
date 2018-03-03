@@ -6,5 +6,5 @@ def index():
     return 'Not here'
 
 @app.route('/api/0.1')
-def index():
+def apiIndex():
     return '<a href="https://github.com/lariliel/dc_server">https://github.com/lariliel/dc_server</a>'
