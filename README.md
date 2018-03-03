@@ -7,9 +7,10 @@ pip install Flask
 pip install Flask-SQLAlchemy  
 pip install bcrypt  
 
-<h1>Запуск</h1>
+# Запуск  
 FLASK_APP=server.py FLASK_DEBUG=1 flask run --host=0.0.0.0  
-<h1>Адреса</h1>  
+
+# Адреса   
 /api/0.1/users/$id  
 /api/0.1/prof  
 /api/0.1/prof/add  
