@@ -13,5 +13,11 @@ def init_db():
     # import all modules here that might define models so that
     # they will be registered properly on the metadata.  Otherwise
     # you will have to import them first before calling init_db()
-    import models
+    from models import User, Prof
     Base.metadata.create_all(bind=engine)
+    u = User(b'TLogin', b'TestFirstname', b'TSurname', b'12345', b'admin@localhost')  
+    db_session.add(u)  
+    db_session.commit()
+    p = Prof(b'TestProf', b'TestDescription', b'https://youtu.be/oHg5SJYRHA0', b'http://ya.ru')
+    db_session.add(p)  
+    db_session.commit()
